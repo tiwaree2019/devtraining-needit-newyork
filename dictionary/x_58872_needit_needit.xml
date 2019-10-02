@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
+        <element label="New Field" max_length="15" name="new_field" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" mandatory="true" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Human resources" sequence="0" value="HR"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="Facilities"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="Legal"/>
+                <element inactive_on_update="false" label="Your department choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Request type" max_length="1024" name="u_glide_list_2" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="What needed" max_length="1024" name="u_glide_list_3" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_4" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="What needed" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="HR 1"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="1" value="HR 2"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities 1"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
+                <element inactive_on_update="false" label="Your Department Choice 1" sequence="6" value="your_choice 1"/>
+                <element inactive_on_update="false" label="Your Department Choice 2" sequence="7" value="your_choice 2"/>
+            </choice>
+        </element>
+    </element>
+</database>
